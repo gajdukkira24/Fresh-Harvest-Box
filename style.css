@@ -1,0 +1,132 @@
+
+/* 
+.hero-section {
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #D31321; 
+    overflow: hidden;
+  }
+  
+
+  .photo-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  
+
+  .decor-item {
+    position: absolute;
+    z-index: 5; 
+  }
+  
+  .banana {
+    top: 40%;
+    left: 10%;
+    transform: rotate(-15deg);
+  }
+  
+  .strawberry {
+    top: 35%;
+    right: 15%;
+    width: 80px;
+  }
+
+  .shop-now-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  } */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Базові стилі сторінки */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f4f7f3;
+
+}
+
+/* 3. Контейнер для центрування контенту */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* 4. Картинки */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 5. Списки */
+ul {
+    list-style: none;
+}
+
+/* 6. Посилання */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+  .icons-logo{
+    width: 156;
+height: 18;
+top: 16px;
+left: 562px;
+opacity: 1;
+gap: 8px;
+stroke: #AE1332;
+fill: #AE1332;
+list-style: none;
+
+
+  }
+
+  .icons-logo-basket{
+    list-style: none;
+    width: 24;
+height: 24;
+top: 13px;
+left: 1224px;
+opacity: 1;
+fill: #AE1332;
+
+  }
+
+  .fresh-nav-ul{
+    width: 208;
+height: 18;
+top: 16px;
+left: 32px;
+opacity: 1;
+gap: 20px;
+
+font-size: 18px;
+font: 'DM Sans';
+display: flex;
+gap: 40px;
+list-style: none;
+color: #AE1332;
+
+  }
+
+  .fresh-logo-btn{
+    fill: #ffffff;
+    stroke:  #AE1332 ;
+  }
