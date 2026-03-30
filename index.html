@@ -2,28 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="./imeages/symbol-defs.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+ 
+
     <title>Fresh-box</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <nav aria-label="Головна навігація">
+            <nav>
                 <ul class="fresh-nav-ul">
-                  <li><a href="#">How It Works</a></li>
-                  <li><a href="#">Fruits</a></li>
-                  <li><a href="#">Contacts</a></li>
-                  <li>
-                    <svg class="icons-logo">
-                        <use href="./imeages/symbol-defs.svg#icon-logo-2"></use>
-                        </svg>
-                        </li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">Fruits</a></li>
+                    <li><a href="#">Contacts</a></li>
                 </ul>
+            
+                <svg class="icons-logo">
+                    <use href="./imeages/symbol-defs.svg#icon-logo-2"></use>
+                </svg>
+            
                 <svg class="icons-logo-basket">
                     <use href="./imeages/symbol-defs.svg#icon-basket"></use>
-                    </svg>
-                </nav>
+                </svg>
+            </nav>
             </div>
     </header>
     <main>
@@ -54,112 +57,159 @@
                        <img src="./imeages/cardsstraberry.png" alt="картка-полуниця">
         </section>
         <section class="order-baslet">
-            <h2>To order your fruit basket,<br>
+            <h2 class="order-baslet-title">To order your fruit basket,<br>
                  simply follow these easy steps</h2>
-                 <p>Our baskets are assembled with care and delivered straight to your doorstep, so you <br>
+                 <p class="order-baslet-text">Our baskets are assembled with care and delivered straight to your doorstep, so you <br>
                     can enjoy the taste of fresh fruit without ever leaving your home. Whether you're<br>
                      looking for a healthy snack or a thoughtful gift, our fruit baskets are the perfect choice.</p>
                      <div class="cards-elevent">
                         <div class="cards-1">
-                            <button>FIrst Step</button>
-                            <p>Just choose the fruit you<br>
+                            <button class="btn-card-1">FIrst Step</button>
+                            <p class="text-card">Just choose the fruit you<br>
                                  want to order by clicking on<br>
                                   the checkboxes next to it.</p>
                         </div>
                         <div class="cards-2">
-                            <button>Second Step</button>
-                            <p>Click on the basket and fill<br>
+                            <button class="btn-card-2">Second Step</button>
+                            <p class="text-card">Click on the basket and fill<br>
                                  out the form.</p>
                         </div>
                         <div class="cards-3">
-                            <button>Third Step</button>
-                            <p>Sit back and relax! Your fresh fruit<br>
+                            <button class="btn-card-3">Third Step</button>
+                            <p class="text-card">Sit back and relax! Your fresh fruit<br>
                                  basket will be delivered.</p>
                         </div>
 
                      </div>
-                     <img src="./imeages/imgFruit.png" alt="imgFruit">
+                     <img  class="img-fruit"  src="./imeages/imgFruit.png" alt="imgFruit">
         </section>
         <section class="organic-fruits">
-            <h2> ORGANIC FRUITS</h2>
-            <p>Our organic fruits are hand-picked from local farms and delivered straight to your doorstep,<br>
+            <h2 class="organic-fruits-title"> ORGANIC FRUITS</h2>
+            <p class="organic-fruits-text">Our organic fruits are hand-picked from local farms and delivered straight to your doorstep,<br>
                  ensuring that you get the freshest and most nutritious produce possible. We offer a wide<br>
                   selection of organic fruits grown without the use of harmful pesticides or chemicals.</p>
-
+                  <div class="plants-grid">
                  <ul>
-                    <li>
-                        <h3>Strawberry</h3>
-                        <p>Plant</p>
-                        <img src="./imeages/sttraberry.png" alt="img-straberry">
-                        <span>100 UAH / kg</span>
+                    <li class="cards-organic-1">
+                        <h3 class="organic-title-1">Strawberry</h3>
+                        <p class="organic-title">Plant</p>
+                        <img class="organic-img" src="./imeages/sttraberry.png" alt="img-straberry">
+                        <span class="organic-span">100 UAH / kg</span>
 
                     </li>
-                    <li>
-                        <h3>Banana</h3>
-                        <p>Plant</p>
-                        <img src="./imeages/bananaCards.png" alt="img-banana">
-                        <span>80 UAH / kg</span>
+                    <li class="cards-organic-2">
+                        <h3 class="organic-title-1">Banana</h3>
+                        <p  class="organic-title">Plant</p>
+                        <img class="organic-img" src="./imeages/bananaCards.png" alt="img-banana">
+                        <span class="organic-span">80 UAH / kg</span>
+
+                    </li >
+                    <li class="cards-organic-3">
+                        <h3 class="organic-title-1">Watermelon</h3>
+                        <p class="organic-title">Plant</p>
+                        <img  class="organic-img"  src="./imeages/wwatermelon.png" alt="img-watermelon">
+                        <span class="organic-span">40 UAH / kg</span>
 
                     </li>
-                    <li>
-                        <h3>Watermelon</h3>
-                        <p>Plant</p>
-                        <img src="./imeages/wwatermelon.png" alt="img-watermelon">
-                        <span>40 UAH / kg</span>
+                    <li class="cards-organic-4">
+                        <h3 class="organic-title-1">Lime</h3>
+                        <p class="organic-title">Plant</p>
+                        <img  class="organic-img" src="./imeages/lime.png" alt="img-lime">
+                        <span class="organic-span">60 UAH / kg</span>
 
                     </li>
-                    <li>
-                        <h3>Lime</h3>
-                        <p>Plant</p>
-                        <img src="./imeages/lime.png" alt="img-lime">
-                        <span>60 UAH / kg</span>
+                    <li class="cards-organic-5">
+                        <h3 class="organic-title-1">Apple</h3>
+                        <p class="organic-title">Plant</p>
+                        <img class="organic-img" src="./imeages/apple.png" alt="img-apple">
+                        <span class="organic-span">50 UAH / kg</span>
 
                     </li>
-                    <li>
-                        <h3></h3>
-                        <p>Plant</p>
-                        <img src="./imeages/apple.png" alt="img-apple">
-                        <span>50 UAH / kg</span>
+                    <li class="cards-organic-6">
+                        <h3 class="organic-title-1">Peach</h3>
+                        <p class="organic-title">Plant</p>
+                        <img  class="organic-img" src="./imeages/peach.png" alt="img-peach">
+                        <span class="organic-span">80 UAH / kg</span>
 
                     </li>
-                    <li>
-                        <h3>Peach</h3>
-                        <p>Plant</p>
-                        <img src="./imeages/peach.png" alt="img-peach">
-                        <span>80 UAH / kg</span>
+                    <li class="cards-organic-7">
+                        <h3 class="organic-title-1">Plums</h3>
+                        <p class="organic-title">Plant</p>
+                        <img class="organic-img" src="./imeages/plums.png" alt="img-plums">
+                        <span class="organic-span">40 UAH / kg</span>
 
                     </li>
-                    <li>
-                        <h3>Plums</h3>
-                        <p>Plant</p>
-                        <img src="./imeages/plums.png" alt="img-plums">
-                        <span>40 UAH / kg</span>
+                    <li class="cards-organic-8">
+                        <h3 class="organic-title-1">Orange</h3>
+                        <p class="organic-title">Plant</p>
+                        <img class="organic-img" src="./imeages/orange.png" alt="img-orange">
+                        <span class="organic-span">60 UAH / kg</span>
 
                     </li>
-                    <li>
-                        <h3>Orange</h3>
-                        <p>Plant</p>
-                        <img src="./imeages/orange.png" alt="img-orange">
-                        <span>60 UAH / kg</span>
-
-                    </li>
-                    <li>
-                        <h3>Kiwi</h3>
-                        <p>Plant</p>
-                        <img src="./imeages/kiwi.png" alt="img-kiwi">
-                        <span>90 UAH / kg</span>
+                    <li class="cards-organic-9">
+                        <h3 class="organic-title-1">Kiwi</h3>
+                        <p class="organic-title">Plant</p>
+                        <img class="organic-img" src="./imeages/kiwi.png" alt="img-kiwi">
+                        <span class="organic-span">90 UAH / kg</span>
 
                     </li>
 
                  </ul>
-                 <svg class="">
-                    <use href="./imeages/defs-btn.svg#icon-btn-1"></use>
+                 </div>
+                 <div class="btn-wrapper">
+                 <svg class="svg-nbtn">
+                    <use href="./imeages/greenbtn-defs.svg#icon-btn-2"></use>
                     </svg>
+                </div>
 
-        </section>
+        </section> 
         <section class="Fresh-Harvest-Box">
+            <h2> Fresh Harvest Box has<br>
+                 got you covered</h2>
+        <img src="./imeages/papai.png" alt="фото папаї">
+        <img src="./imeages/blueberry.png" alt="фото лохини">
+        <p>Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for<br>
+             anyone looking to eat healthier or support local farmers. Order your box today and<br>
+             start enjoying the best that nature has to offer!</p>
+             <label>
+                <input type="email" placeholder="Enter email...">
+                <button>send</button>
+             </label>
 
         </section>
     </main>
+    <footer>
+        <img src="./imeages/girlwithbanana.png" alt="фото дівчини">
+        <svg class="icons-logo">
+            <use href="./imeages/symbol-defs.svg#icon-logo-2"></use>
+            </svg>
+            <ul class="">
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Fruits</a></li>
+                <li><a href="#">Contacts</a></li>
+               </ul>
+                   
+               <ul>
+                <li>
+                    <svg class="facebook-icon">
+                        <use href="./imeages/socialmedia-defs.svg#icon-1"></use>
+                        </svg>
+                        </li>
+                        <svg class="insta-icon">
+                            <use href="./imeages/socialmedia-defs.svg#icon-2"></use>
+                            </svg>
+                            </li>
+                            <svg class="youtub-icon">
+                                <use href="./imeages/socialmedia-defs.svg#icon-3"></use>
+                                </svg>
+                                </li>
+               </ul>
+               <ul>
+                <li><a href="+380 (68) 443-94-26">+380 (68) 443-94-26</a></li>
+                <li>1678 S. Pioneer Road</li>
+                <li>Salt Lake City</li>
+                <li>UT 84104</li>
+               </ul>
+    </footer>
 </body>
 </html>

@@ -1,18 +1,17 @@
 
-/* 
+
 .hero-section {
 
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: #D31321; 
     overflow: hidden;
   }
   
 
   .photo-wrapper {
     position: absolute;
-    bottom: 0;
+    bottom: 3;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -21,7 +20,7 @@
 
   .decor-item {
     position: absolute;
-    z-index: 5; 
+    z-index: 7; 
   }
   
   .banana {
@@ -76,57 +75,437 @@ img {
 ul {
     list-style: none;
 }
-
+header{
+    height: 35px;
+}
 /* 6. Посилання */
 a {
     text-decoration: none;
     color: inherit;
 }
-
-
-  .icons-logo{
-    width: 156;
-height: 18;
-top: 16px;
-left: 562px;
-opacity: 1;
-gap: 8px;
-stroke: #AE1332;
-fill: #AE1332;
-list-style: none;
-
-
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
   }
-
-  .icons-logo-basket{
-    list-style: none;
-    width: 24;
-height: 24;
-top: 13px;
-left: 1224px;
-opacity: 1;
-fill: #AE1332;
-
+  .icons-logo{
+    width: 199px;
+    height: 18px;
+    top: 16px;
+    left: 562px;
+    opacity: 1;
+    gap: 8px;
+ 
+    
+    fill: #AE1332;
+  }
+  .icons-logo-basket {
+      width: 18px;
+      height: 18px;
+      fill: #AE1332;
   }
 
   .fresh-nav-ul{
-    width: 208;
-height: 18;
-top: 16px;
-left: 32px;
-opacity: 1;
-gap: 20px;
 
-font-size: 18px;
-font: 'DM Sans';
-display: flex;
-gap: 40px;
-list-style: none;
-color: #AE1332;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        color: #AE1332;
+        margin-bottom: 0; /* або взагалі видали */
+    
 
   }
 
   .fresh-logo-btn{
     fill: #ffffff;
     stroke:  #AE1332 ;
+  }
+
+  .facebook-icon{
+    fill: #ffffff;
+    stroke:  #AE1332 ;
+
+  }
+
+  .insta-icon{
+    fill: #ffffff;
+    stroke:  #AE1332 ;
+
+  }
+
+  .youtub-icon{
+    fill: #ffffff;
+    stroke:  #AE1332 ;
+
+  }
+
+  main{
+    background-color: #AE1332;
+  }
+
+  .img-fruit{
+  
+        width: 860px;
+        height: 476px;
+        border-radius: 20px;
+        display: block;
+         margin: 0 auto;  
+        margin-bottom: 170px;
+    
+  }
+
+  .order-baslet-title{
+    font-size:' DM Sans';
+   text-align: center;
+   font-weight: 500;
+   font-style: Medium;
+   font-size: 40px;
+   line-height: 44px;
+   letter-spacing: -4%;
+   text-align: center;
+   vertical-align: middle;
+   text-transform: uppercase;
+   color: white;
+   margin-bottom: 10px;
+  }
+
+  .order-baslet-text{
+    font-family: 'DM Sans';
+font-weight: 400;
+font-style: 'Regular';
+font-size: 14px;
+line-height: 18px;
+letter-spacing: -4%;
+text-align: center;
+vertical-align: middle;
+color: white;
+
+
+  }
+  .btn-card-1 {
+    width: 136px;
+    height: 48px;
+    border-radius: 200px;
+    color: white;
+    background-color: #AE1332;
+    border: solid #AE1332;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  .cards-1{
+   
+        background-color: white;
+        width: 350px;
+        height: 79px;
+        border-radius: 20px;
+    
+        display: flex;              /* головне */
+        align-items: center;        /* по вертикалі */
+      
+        padding: 20px;
+        justify-content: flex-start; /* 🔥 змінили */
+        gap: 20px; /* 🔥 додали */
+    }
+
+    .text-card {
+        font-family: 'DM Sans';
+        font-size: 14px;
+        line-height: 18px;
+        max-width: 200px; /* щоб не розтягувався */
+    }
+
+    .cards-2{
+   
+        background-color: white;
+        width: 350px;
+        height: 79px;
+        border-radius: 20px;
+    
+        display: flex;              /* головне */
+        align-items: center;        /* по вертикалі */
+        justify-content: flex-start; /* 🔥 змінили */
+        gap: 20px; /* 🔥 додали */
+        padding: 20px;
+    }
+    .cards-3{
+        background-color: white;
+        width: 350px;
+        height: 79px;
+        border-radius: 20px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+         gap: 15px; 
+        padding: 20px;
+    }
+ 
+    .btn-card-2{
+        width: 136px;
+        height: 48px;
+        border-radius: 200px;
+        color: white;
+        background-color:  #A1C864;
+        border: solid  #A1C864;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+   .btn-card-3{
+    width: 136px;
+    height: 48px;
+    border-radius: 200px;
+    color: white;
+    background: #F5CE13;
+    border: solid  #F5CE13;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+
+    }
+
+    .cards-elevent {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center; /* 🔥 тепер по центру */
+        padding: 20px 0; 
+        margin-bottom: 70px;
+    }
+
+    /* .cards-1,
+.cards-2,
+.cards-3 {
+    margin-bottom: 50px;
+    background-color: white;
+    width: 350px;
+    height: 79px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 5px; 
+    
+    
+} */
+
+
+.organic-fruits-title{
+    font-size:' DM Sans';
+    text-align: center;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -4%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 10px;
+
+}
+
+.organic-fruits-text{
+    font-family: 'DM Sans';
+font-weight: 400;
+font-style: 'Regular';
+font-size: 14px;
+line-height: 18px;
+letter-spacing: -4%;
+text-align: center;
+vertical-align: middle;
+color: white;
+margin-bottom: 48px;
+
+
+}
+
+.cards-organic-1{
+    width: 389px;
+    height: 465px;
+    border-radius: 20px;
+    background-color:#F8766B;
+
+    padding-top: 20px; /* 🔥 опускає весь контент */
+    padding-left: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.organic-title-1{
+
+    font-size:' DM Sans';
+    font-weight: 700;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -4%;
+    vertical-align: middle;
+
+    color: white;
+    margin-bottom: 10px;
+   
+ 
+}
+
+.organic-title{
+    font-family: 'DM Sans';
+font-weight: 400;
+font-style: 'Regular';
+font-size: 18px;
+line-height: 24px;
+letter-spacing: -2%;
+vertical-align: middle;
+color: white;
+margin: 0 0 0 10px;
+
+
+}
+
+.organic-img{
+   
+    width: 295px;
+height: 251px;
+top: 137px;
+left: 47px;
+margin: 0 auto;  
+margin-bottom: 15px;
+
+
+}
+
+.organic-span{
+width: 99px;
+height: 40px;
+    display: inline-block;
+    background-color: #f6f1f1; /* Світла плашка */
+    line-height: 40px; 
+    padding: 10px 25px; 
+    border-radius: 30px;      /* Овальна форма */
+    font-weight: 500;
+   margin: 0;
+    margin-top: 20px;
+    color: #AE1332;
+
+}
+
+
+.cards-organic-2{
+    width: 389px;
+    height: 465px;
+    border-radius: 20px;
+    background-color:#EDD251;
+
+    padding-top: 20px; /* 🔥 опускає весь контент */
+    padding-left: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.cards-organic-3{
+    width: 389px;
+    height: 465px;
+    border-radius: 20px;
+    background-color:#9DC262;
+
+    padding-top: 20px; /* 🔥 опускає весь контент */
+    padding-left: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.cards-organic-4{
+    width: 389px;
+    height: 465px;
+    border-radius: 20px;
+    background-color:#BFD663;
+
+    padding-top: 20px; /* 🔥 опускає весь контент */
+    padding-left: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.cards-organic-5{
+    width: 389px;
+    height: 465px;
+    border-radius: 20px;
+    background-color:#E93F29;
+
+    padding-top: 20px; /* 🔥 опускає весь контент */
+    padding-left: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.cards-organic-6{
+    width: 389px;
+    height: 465px;
+    border-radius: 20px;
+    background-color:#DB4F4B;
+
+    padding-top: 20px; /* 🔥 опускає весь контент */
+    padding-left: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.cards-organic-7{
+    width: 389px;
+    height: 465px;
+    border-radius: 20px;
+    background-color:#9B5366;
+
+    padding-top: 20px; /* 🔥 опускає весь контент */
+    padding-left: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.cards-organic-8{
+    width: 389px;
+    height: 465px;
+    border-radius: 20px;
+    background-color:#F47F4C;
+
+    padding-top: 20px; /* 🔥 опускає весь контент */
+    padding-left: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.cards-organic-9{
+    width: 389px;
+    height: 465px;
+    border-radius: 20px;
+    background-color:#98B37E;
+
+    padding-top: 20px; /* 🔥 опускає весь контент */
+    padding-left: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.plants-grid ul {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 1px;
+    margin: 0;       /* прибираємо стандартні відступи ul */
+    padding: 0;
+    list-style: none;
+}
+
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center; /* горизонтальне центрування */
+    align-items: center;     /* вертикальне центрування */
   }
