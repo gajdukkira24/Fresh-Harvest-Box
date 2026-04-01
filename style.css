@@ -509,3 +509,110 @@ height: 40px;
     justify-content: center; /* горизонтальне центрування */
     align-items: center;     /* вертикальне центрування */
   }
+
+
+  .Fresh-Harvest-title{
+    font-size:' DM Sans';
+    text-align: center;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -4%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 10px;
+
+  }
+
+
+  .Fresh-Harvest-text{
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-style: 'Regular';
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -4%;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    margin-bottom: 48px;
+
+  }
+
+  .svg-nbtn{
+    margin-bottom: 70px;
+  }
+/* обгортка */
+.subscribe-wrapper{
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+  
+    }
+    
+    /* форма */
+    .subscribe-form{
+    display:flex;
+    gap:0;
+    margin-bottom: 30px;
+    }
+    
+    /* спільне */
+    .subscribe-form input,
+    .subscribe-form button{
+    margin:0;
+    padding:12px 15px;
+    font-size:16px;
+    border:1px solid #ccc;
+    }
+    
+    /* input */
+    .subscribe-form input{
+    height:23px;
+    width:200px;                     /* ширший */
+    background-color: #AE1332;
+    border-right:none;               /* КЛЮЧ */
+    outline:none;
+    
+    border-radius:100px 0 0 100px;   /* тільки ліва частина */
+    }
+    
+    /* button */
+    .subscribe-form button{
+    height:49px;
+    width:90px;
+    
+    background:#9DC162;
+    color:white;
+    cursor:pointer;
+    
+    border-radius:0 100px 100px 0;   /* тільки права */
+    border-left:none;                /* КЛЮЧ */
+    }
+
+    .footer-nav{
+        display:flex;
+        gap:40px;
+        align-items:flex-start; /* це вертикальне вирівнювання */
+        color:#AE1332;
+        margin-bottom:20px;
+    }
+    .nav-ul-icon{
+        display:flex;
+        flex-direction: row;  /* рядок, а не колонка */          /* відстань між іконками */
+        margin-left: auto;    /* підтягує вправо */
+        margin:0;
+        padding:0;
+        list-style:none;
+    }
+        
+        /* ТЕКСТ */
+        .nav-ul-footer{
+            display:flex;
+            flex-direction:column;
+            align-items:flex-end; /* вправо */
+        color:#AE1332;
+        }
