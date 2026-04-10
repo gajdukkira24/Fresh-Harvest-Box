@@ -120,6 +120,7 @@ nav {
   .fresh-logo-btn{
     fill: #ffffff;
     stroke:  #AE1332 ;
+  
   }
 
   .facebook-icon{
@@ -593,26 +594,140 @@ height: 40px;
     border-left:none;                /* КЛЮЧ */
     }
 
-    .footer-nav{
-        display:flex;
-        gap:40px;
-        align-items:flex-start; /* це вертикальне вирівнювання */
-        color:#AE1332;
-        margin-bottom:20px;
-    }
-    .nav-ul-icon{
-        display:flex;
-        flex-direction: row;  /* рядок, а не колонка */          /* відстань між іконками */
-        margin-left: auto;    /* підтягує вправо */
-        margin:0;
-        padding:0;
-        list-style:none;
-    }
         
-        /* ТЕКСТ */
+        /* НАВІГАЦІЯ */
+        .footer-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        
+            display: flex;              /* включаємо flex */
+            justify-content: center;    /* центруємо по горизонталі */
+            gap: 40px;                  /* відстань між пунктами */
+        }
+        
+        .footer-nav li {
+            color: #AE1332;
+        }
+        /* ІКОНКИ */
+        .nav-ul-icon{
+            display: block;
+            display: flex;
+            gap: 5px;
+            margin-left: auto; /* тепер працює */
+            list-style: none;
+            padding: 0;
+        }
+        /* ТЕКСТ СПРАВА */
         .nav-ul-footer{
-            display:flex;
-            flex-direction:column;
-            align-items:flex-end; /* вправо */
-        color:#AE1332;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            color: #AE1332;
+        }
+
+
+        .nav-ul-icon svg{
+            width: 44px;
+            height: 44px;
+            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+
+        
+        .right-block{
+            margin-left: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+    
+        
+        .img-footer{
+            padding: 10px;
+            margin: 20px;
+        }
+        .nav-img-foter {
+            display: flex;
+            flex-direction: column; /* один під одним */
+            align-items: center;    /* ⬅️ центруємо */
+            gap: 10px;
+        }
+        .photo-wrapper {
+            position: relative; /* основа для позиціонування */
+            display: inline-block;
+        }
+        
+        .main-photo {
+            display: block;
+        }
+        
+        /* кнопка */
+        .fresh-logo-btn {
+            position: absolute;
+            bottom: -54px; /* виходить за межі картинки вниз */
+            left: 50%;
+            transform: translateX(-50%); /* по центру */
+            
+            z-index: 4; /* щоб була поверх картинки */
+        }
+
+        .fresh-title{
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 48px;
+            font-weight: 700;
+            text-transform: uppercase;
+            z-index: 5;
+            font-size:' DM Sans';
+            text-align: center;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 65px;
+            line-height: 44px;
+            letter-spacing: -4%;
+            text-align: center;
+            vertical-align: middle;
+            text-transform: uppercase;
+            color: white;
+            margin-bottom: 10px;
+            gap: 10px;
+           
+        }
+
+
+        .icons-logo{
+            margin-bottom: 20px;
+        }
+
+
+        .cards-hero-wa {
+            position: absolute;
+            right: 100px;
+            bottom: 100px; /* чим більше число — тим вище */
+        }
+
+
+        .cards-hero-watermelin{
+            padding: 70px;
+        }
+
+
+        .facebook-icon:hover{
+            transform: scale(1.2);
+        }
+
+        .insta-icon:hover{
+            transform: scale(1.2);
+        }
+
+
+        .youtub-icon:hover{
+            transform: scale(1.2);
         }
