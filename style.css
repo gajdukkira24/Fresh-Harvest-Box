@@ -122,47 +122,50 @@ ul {
     list-style: none;
 }
 header {
-    padding: 2px 0;
+    width: 100%;
     background-color: #fff;
-}
+  }
 /* 6. Посилання */
 a {
     text-decoration: none;
     color: inherit;
 }
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-}
-  .icons-logo{
-   
-
-        width: 90px;
-        height: auto;
-  
-    fill:#AE1332;
-   
-  
-    }
-  .icons-logo-basket {
-      width: 18px;
-      height: 18px;
-      fill: #AE1332;
+    position: relative;
   }
+  .icons{
+    fill: #AE1332;
+  }
+  .icons-logo {
+height: 40px;
+    fill: #AE1332;
+  
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+    .icons-logo-basket {
+        width: 24px;
+        height: 24px;
+        fill: #AE1332;
+        cursor: pointer;
+      }
  
-
-  .fresh-nav-ul{
-    display:flex;
-    gap:40px;
-    align-items:center;
-    color:#AE1332;
-    
-    margin:0;        /* 🔥 прибирає відступи */
-    padding:0;       /* 🔥 прибирає відступ зліва */
-    list-style:none; /* 🔥 прибирає кружечки */
-    }
+  .fresh-nav-ul {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    color: #AE1332;
+  }
+  
 
   .fresh-logo-btn{
     fill: #ffffff;
