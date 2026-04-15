@@ -1,23 +1,69 @@
 
 
-.hero-section {
 
+  
+/* HERO */
+.hero{
     position: relative;
-    width: 100%;
-    height: 100vh;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #AE1332;
+    color: white;
     overflow: hidden;
-  }
-  
-
-  .photo-wrapper {
+    }
+    
+    /* ЗАГОЛОВОК */
+    .fresh-title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    
+    /* 📱 телефон */
+    @media (max-width: 768px) {
+        .fresh-title {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+    }
+    
+    /* ФОТО */
+    .photo-wrapper{
+    position: relative;
+    display: inline-block;
+    }
+    
+    .main-photo{
+    width: 300px;
+    border-radius: 20px;
+    }
+    
+    /* КНОПКА (SVG поверх картинки) */
+    .fresh-logo-btn{
     position: absolute;
-    bottom: 3;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-  }
-  
-
+    bottom: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    }
+    
+    /* КАРТКИ */
+    .cards-hero-watermelin{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 120px;
+    }
+    
+    .cards-hero-wa{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 120px;
+    }
   .decor-item {
     position: absolute;
     z-index: 7; 
@@ -75,8 +121,9 @@ img {
 ul {
     list-style: none;
 }
-header{
-    height: 35px;
+header {
+    padding: 2px 0;
+    background-color: #fff;
 }
 /* 6. Посилання */
 a {
@@ -87,35 +134,35 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 5px;
-  }
+    width: 100%;
+}
   .icons-logo{
-    width: 199px;
-    height: 18px;
-    top: 16px;
-    left: 562px;
-    opacity: 1;
-    gap: 8px;
- 
-    
-    fill: #AE1332;
-  }
+   
+
+        width: 90px;
+        height: auto;
+  
+    fill:#AE1332;
+   
+  
+    }
   .icons-logo-basket {
       width: 18px;
       height: 18px;
       fill: #AE1332;
   }
+ 
 
   .fresh-nav-ul{
-
-        display: flex;
-        gap: 40px;
-        align-items: center;
-        color: #AE1332;
-        margin-bottom: 0; /* або взагалі видали */
+    display:flex;
+    gap:40px;
+    align-items:center;
+    color:#AE1332;
     
-
-  }
+    margin:0;        /* 🔥 прибирає відступи */
+    padding:0;       /* 🔥 прибирає відступ зліва */
+    list-style:none; /* 🔥 прибирає кружечки */
+    }
 
   .fresh-logo-btn{
     fill: #ffffff;
@@ -731,3 +778,146 @@ height: 40px;
         .youtub-icon:hover{
             transform: scale(1.2);
         }
+
+
+        /* фон */
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    justify-content:center;
+    align-items:center;
+    }
+    
+    /* контент */
+    .modal-content{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    width:300px;
+    text-align:center;
+    position:relative;
+    }
+    
+    /* кнопка закриття */
+    .close-btn{
+    position:absolute;
+    top:10px;
+    right:15px;
+    font-size:20px;
+    cursor:pointer;
+    }
+
+
+.options {
+    display: flex;
+    gap: 10px;
+    grid-column: span 2;
+  }
+  
+  .option {
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .option.selected {
+    border-color: #ff6b6b;
+    background: #fff5f5;
+  }
+  
+  .order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+  
+  .submit-btn {
+    background: #8bc34a;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    border-radius: 20px;
+  }
+  
+
+  .success-modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    justify-content:center;
+    align-items:center;
+    z-index:2000;
+    }
+    
+    .success-content{
+    background-color: #E03F5E;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    width:300px;
+    }
+
+
+    .img-rasberry{
+        display: flex;
+        align-items: center;
+    }
+
+.close-success{
+    width: 100px;
+    height: 50px;
+    background: #9DC162;
+    border: #8bc34a solid;
+color: #ffffff;
+border-radius: 100px;
+
+}
+.success-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rasberry-p{
+    font-family:'DM Sans';
+font-weight: 400;
+font-style:' Regular';
+font-size: 14px;
+line-height: 18px;
+letter-spacing: -4%;
+text-align: center;
+vertical-align: middle;
+color: white;
+
+
+  }
+
+
+  @media (max-width: 768px) {
+    .img-fruit{
+        width: 300px;
+        height: 446px;
+        border-radius: 20px;
+        padding: 2px;
+    }
+}
+
+
